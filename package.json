@@ -1,7 +1,7 @@
 {
   "name": "playsound-frontend",
   "version": "0.1.0",
-  "homepage": "homepage": "https://myusername.github.io/my-app",
+  "homepage": "https://myusername.github.io/my-app",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
