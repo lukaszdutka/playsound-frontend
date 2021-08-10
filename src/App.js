@@ -7,7 +7,10 @@ import AdminView from "./components/AdminView/AdminView";
 import PlayerView from "./components/PlayerView/PlayerView";
 
 function App() {
-  const socket = io("https://playsound-backend.herokuapp.com/");
+  const socket = io("https://playsound-backend.herokuapp.com/", {
+    withCredentials: true,
+    transports : ['websocket', 'polling', 'flashsocket']
+  });
   const [activePlayer, setActivePlayer] = useState(null);
   const [playersInRoom, setPlayersInRoom] = useState([]);
 
